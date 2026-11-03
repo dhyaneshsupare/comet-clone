@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.featured-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.product-card{
+    border: 1px solid black;
+    width: 25%;
+}
+
+.product-card > img{
+    width: 100%;
+}

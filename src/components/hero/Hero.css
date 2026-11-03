@@ -1,0 +1,8 @@
+.hero-section{
+    width: 100vw;
+    height: 85vh;
+    background-image: url(../../assets/herobanner.jpg);
+    background-size: cover;
+    /* margin-left: 10px; */
+    background-repeat: no-repeat;
+}

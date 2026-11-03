@@ -1,0 +1,39 @@
+.navbar{
+    /* background-color: yellow; */
+    width: 87vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55vw;
+    gap: 6rem;
+    /* text-decoration: none; */
+}
+
+.nav-menu a{
+    text-decoration: none;
+}
+
+.nav-items{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* .nav-icon{
+    background-color: greenyellow;
+
+} */

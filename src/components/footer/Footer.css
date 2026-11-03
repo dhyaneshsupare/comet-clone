@@ -1,0 +1,16 @@
+.footer-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+}
+
+.footer-element{
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+}
