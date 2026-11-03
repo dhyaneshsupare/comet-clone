@@ -1,13 +1,46 @@
-
 import cometLogo from "../../assets/cometlogo.avif";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import shopAllImg from "../../assets/shopAllImg.jpeg"
+import xLowsImg from "../../assets/xLowsImg.jpg"
+import apexImg from "../../assets/apexImg.jpg"
+import aeresImg from "../../assets/aeresImg.jpg"
+import aeonImg from "../../assets/aeonImg.jpg"
 
+const megaMenus =  {
+  men: {
+    shopAll: { title: "MEN SHOP ALL", img: shopAllImg, to: "/allsneakers/men" },
+    collections: [
+      { title: "X-LOWS", img: xLowsImg, to: "/men" },
+      { title: "APEX", img: apexImg, to: "/men" },
+      { title: "AERES", img: aeresImg, to: "/men" },
+      { title: "AEON", img: aeonImg, to: "/men" },
+    ],
+    links: ["New In", "Find your Silhouette", "Refer A Friend", "Gift A Comet", "Only Few Left", "The Garage", "The 9-9 Edit"]
+  },
+  
+  women:{
+    shopAll: { title: "WOMEN SHOP ALL", img: shopAllImg, to: "/allsneakers/women" },
+    collections: [
+      { title: "X-LOWS", img: xLowsImg, to: "/women" },
+      { title: "APEX", img: apexImg, to: "/women" },
+      { title: "AERES", img: aeresImg, to: "/women" },
+      { title: "ASTRA", img: aeonImg, to: "/women" },
+    ],
+    links: ["New In", "Find your Silhouette", "Refer A Friend", "Gift A Comet", "Only Few Left", "The Garage", "The 9-9 Edit"]
+  }
+}
+
+const Chevron = ({ open }) => (
+  <svg className={`chevron-icon ${open ? "open" : ""}`} viewBox="0 0 12 8" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M1 1.5l5 5 5-5" />
+  </svg>
+)
 
 const Navbar = () => {
   return (
     <>
-    //Traditional way to build an Navbar component.
+    {/* Traditional way to build an Navbar component. */}
       {/* <div className="navbar">
         <div className="logo">
           <Link to='/'> <img src={cometLogo} alt="" /> </Link>
@@ -87,6 +120,7 @@ const Navbar = () => {
       </div> */}
 
       
+
     </>
   );
 };
