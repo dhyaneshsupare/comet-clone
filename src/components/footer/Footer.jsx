@@ -148,7 +148,7 @@ const Footer = () => {
           <p className="footer-contact">
             <b>Careers</b>: <a href="#">Apply Here</a>
           </p>
-          //Horizontal line for partition.
+          {/* Horizontal line for partition. */}
           <hr className="footer-divider" />
           <h2 className="footer-heading">
             <PinIcon /> REACH US
